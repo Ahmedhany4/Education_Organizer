@@ -1,0 +1,181 @@
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+#container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 80%;
+    max-width: 500px;
+}
+
+#timer {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+#taskList {
+    text-align: left;
+    margin-bottom: 20px;
+}
+.btn {
+  color: white;
+  font-weight: bold;
+  letter-spacing: .9px;
+}
+.rest {
+  background: #bf170b;
+}
+.start {
+  background: #4caf50;
+}
+.stop {
+  background: #2196F3;
+}
+.task {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  padding: 8px;
+  border-bottom: 1px solid #ccc;
+}
+button:hover {
+  filter: grayscale(0.4);
+}
+.completedTask {
+    text-decoration: line-through;
+    color: #888;
+
+}
+
+.completeBtn {
+    background-color: #4caf50;
+    color: #fff;
+    max-width: 50px;
+    font-size: 10px;
+    padding: 5px ;
+    max-width: 65px;
+}
+
+.updateBtn {
+    background-color: #2196F3;
+    color: #fff;
+    max-width: 50px;
+    font-size: 10px;
+    padding: 5px ;
+}
+
+.deleteBtn {
+  background-color: #e81505;
+  color: #fff;
+  max-width: 50px;
+  font-size: 10px;
+  padding: 5px ;
+}
+
+button {
+    border: none;
+    padding: 8px 12px;
+    font-size: 14px;
+    cursor: pointer;
+    border-radius: 4px;
+    margin-left: 5px;
+    transition: filter 0.2s;
+}
+
+input {
+    padding: 8px;
+    width: 60%;
+    margin-right: 10px;
+}
+.complete {
+  opacity: 0.5;
+}
+.taskText {
+  min-width: 160px;
+}
+
+/* Existing styles */
+
+@media only screen and (max-width: 767px) {
+  /* Styles for screens up to 767px wide (typical mobile devices) */
+  #container {
+      width: 90%;
+      padding: 15px; /* Increase padding for better spacing on smaller screens */
+  }
+
+  #timer {
+      font-size: 20px; /* Reduce font size for better visibility on small screens */
+  }
+
+  input {
+    width: 93%;
+      margin-bottom: 10px; /* Add some space below the input field */
+  }
+
+  button {
+      width: 100%; /* Make buttons full width for better touch interactions */
+      margin-left: 0;
+      margin-bottom: 10px; /* Add some space between buttons */
+  }
+
+  .task {
+      padding: 10px; /* Increase padding for better spacing between tasks */
+  }
+
+  .completeBtn, .updateBtn, .deleteBtn {
+      font-size: 12px; /* Reduce font size for better visibility on small screens */
+      padding: 5px 8px; /* Adjust button padding */
+      margin-left: 5px;
+  }
+  .taskText{
+    min-width: 99px;
+  }
+}
+
+/* Existing styles */
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  /* Styles for screens between 768px and 1024px wide (typical tablets) */
+  #container {
+      width: 70%; /* Adjust container width for tablets */
+      padding: 15px; /* Maintain increased padding for better spacing */
+  }
+
+  #timer {
+      font-size: 22px; /* Slightly increase font size for tablets */
+  }
+
+  input {
+      width: 80%; /* Adjust input width for tablets */
+      margin-bottom: 15px; /* Increase space below the input field */
+  }
+
+  button {
+      width: 80%; /* Adjust button width for tablets */
+      margin-left: 0;
+      margin-bottom: 15px; /* Increase space between buttons */
+  }
+
+  .task {
+      padding: 12px; /* Slightly increase padding for better*/
+      }
+
+        .completeBtn, .updateBtn, .deleteBtn {
+            font-size: 14px;
+            padding: 5px 8px;
+            margin-left: 5px;
+        }
+    }
+
